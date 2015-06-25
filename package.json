@@ -1,0 +1,16 @@
+{
+  "name": "ywca-workspace",
+  "version": "0.0.1",
+  "description": "YWCA Workspace for Victor Mc Daniel",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:vicmcdaniel/ywebca.git"
+  },
+  "author": {
+    "name": "Victor Mc Daniel",
+    "email": "victmcdaniel@gmail.com",
+    "url": "https://github.com/vicmcdaniel"
+  },
+  "license": "MIT",
+  "dependencies": {}
+}
