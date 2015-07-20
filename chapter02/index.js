@@ -5,7 +5,7 @@
 // evaluated value is not undefined.
 Exer.expressions1 = function () {
 
-  return /* your answer here */ ;
+  return ("whatever") ;
 
 };
 
@@ -13,7 +13,7 @@ Exer.expressions1 = function () {
 // Statements 1
 Exer.statements1 = function () {
 
-  // Write a statement that is not undefined.
+   22;
 
 };
 /* jshint ignore:end */
@@ -23,9 +23,10 @@ Exer.statements1 = function () {
 // Variables 1
 Exer.variables1 = function () {
 
-  // Write a statement that declares a variable.
+  var caught = 7 * 7 ;
 
-  // Return that variable.
+  return caught;
+
 
 };
 
@@ -33,10 +34,12 @@ Exer.variables1 = function () {
 Exer.variables2 = function () {
 
   // Write a statement that declares a variable.
-
+  var five;
   // Write a statement to assign a number value to your variable.
+  five = 5 ;
 
   // Return the variable.
+  return five ;
 
 };
 
@@ -44,25 +47,28 @@ Exer.variables2 = function () {
 Exer.variables3 = function () {
 
   // Write a statement that declares a variable and initializes it to a string.
-
+  var myName = "Vic Damone";
   // Return the variable.
-
+  return myName ;
 };
 
 // Variables 4
 Exer.variables4 = function ( n ) {
 
   // Return the parameter.
-
+  return (n)
 };
+
 
 // Variables 5
 Exer.variables5 = function ( n ) {
 
   // Declare a new variable and initialize it to the value of `n`.
+  var myVariable = n;
 
+; 
   // Return the new variable.
-
+  return myVariable
 };
 
 // Variables 6
@@ -70,12 +76,12 @@ Exer.variables6 = function ( stacys ) {
 
   // You have 3 apples
   // (declare a variable named `apples` and initialize it to `3`)
-
+  var apple = 3 ;
   // Stacy gives you more apples
   // (the parameter `stacys`)
 
   // Return the total number of apples you have.
-
+  return apples + stacys;
 };
 
 // Variables 7
@@ -83,15 +89,20 @@ Exer.variables6 = function ( stacys ) {
 Exer.variables7 = function ( change ) {
 
   // You find a quarter.
-
+  var quarter = 0.25;
   // Then you spend a dime on old fashioned candy.
   // How much money do you have now?
+  var dime = 0.10;
+  change = change + quarter - dime;
+
 
   // Use type coercion to turn your pocket change into a string add a dollar
   // sign to the beginning.
+  change = "$" + change;
+
 
   // Return that string.
-
+  return change;
 };
 
 
@@ -102,12 +113,14 @@ Exer.variables7 = function ( change ) {
 // Fix the function so no keywords or reserved words are improperly used.
 /*
 Exer.keywords1 = function ( true, two ) {
-  var new = 2;
-  var const = two+2;
-  true += "2";
-  var function = new + const + true + two;
-  return function;
-};
+  
+  var newVar = 2;
+  var constant = two + 2;
+  trueVar += "2";
+  var func = newVar + constant + trueVar + two;
+  return func;
+  
+  }; 
 */
 
 /*--------------------------    THE ENVIRONMENT    ---------------------------*/
@@ -119,7 +132,7 @@ Exer.environment1 = function () {
   // return window;
   // return document;
   // return history;
-  // return browser;
+  return browser;
   // return navigator;
 
 };
@@ -133,6 +146,10 @@ Exer.environment1 = function () {
 Exer.functions1 = function (recombobulate, setPowerLevel, cornTortilla) {
 
   // Your work here
+  recombobulate();
+  setPowerLevel(9001);
+  cornTortilla("chicken", "queso", "bacon", "lime");
+
 
 };
 
@@ -143,14 +160,14 @@ Exer.functions1 = function (recombobulate, setPowerLevel, cornTortilla) {
 Exer.console1 = function () {
 
   // Output something to the console.
-
+  console.log("hi, everybody")
 };
 
 // Console 2
 Exer.console2 = function ( printme ) {
 
   // Print the parameter `printme` to the console.
-
+  console.log(printme);
 };
 
 // Console 3
@@ -160,7 +177,9 @@ Exer.console2 = function ( printme ) {
 // change the value of the variable `data`.
 Exer.console3 = function ( data ) {
 
-  // your answer here
+    console.log("The magic word is \"" + data + "\"");
+
+
 
 };
 
@@ -169,7 +188,7 @@ Exer.console4 = function () {
 
   // Use comma-separated values to output two things to the console with one
   // call.
-
+  console.log("Hello everybody", "This is whatever.");
 };
 
 // Console 5
@@ -177,9 +196,9 @@ Exer.console4 = function () {
 Exer.console5 = function ( x, y ) {
 
   // Output the first parameter `x` to the console.
-
+  console.log(x)
   // Make the function return the parameter `y` plus 1.
-
+  return y + 1;
 };
 
 /*---------------------------    RETURN VALUES    ----------------------------*/
@@ -188,7 +207,9 @@ Exer.console5 = function ( x, y ) {
 // Call and log out the result of `magicFunc`.
 Exer.return1 = function () {
 
-  // your work goes here
+  console.log(magicFunc());
+
+
 
 };
 
@@ -196,7 +217,7 @@ Exer.return1 = function () {
 // Call and return the result of `magicFunc`.
 Exer.return2 = function () {
 
-  // your work goes here
+   return magicFunc();
 
 };
 
@@ -204,9 +225,10 @@ Exer.return2 = function () {
 Exer.return3 = function () {
 
   // Call `strShift` with the argument "abczABCZ". Log the result.
-
+  var str = strShift("abczABCZ");
+  console.log(str);
   // Return that same result with "123" concatenated to the end.
-
+  return str + "123";
 };
 
 // Return 4
@@ -214,7 +236,10 @@ Exer.return3 = function () {
 // `magicFunc`.
 Exer.return4 = function () {
 
-  // your work goes here
+  var newStr = magicFunc() + "" + magicFunc();
+  console.log(newStr);
+
+
 
 };
 
@@ -227,11 +252,13 @@ Exer.return4 = function () {
 Exer.return5 = function () {
 
   // Declare and initialize a variable for the first string.
+  var str1 = strShift("abcABC123!@#");
+
 
   // Declare and initialize a variable for the second string.
-
+  var str2 = strShift(strShift("a S d F j K l"));
   // A return statement.
-
+  return strShuffle(str1, str2);
 };
 
 /*-------------------------    PROMPT AND CONFIRM    -------------------------*/
@@ -240,15 +267,14 @@ Exer.return5 = function () {
 // Call prompt with the string and return the result.
 Exer.prompt1 = function () {
 
-  // Your work here
-
+   return prompt("What is the answer to the best quarterback in the nfl?");
 };
 
 // Confirm 1
 // Call confirm with the string and return the result.
 Exer.confirm1 = function () {
+  return confirm("i will have to say aaron rodgers is best quarterback!")
 
-  // Your work here
 
 };
 
@@ -258,8 +284,12 @@ Exer.confirm1 = function () {
 Exer.control1 = function () {
 
   // Use prompt to get a number from a user
+  var userNumber = prompt("What are the digits!");
+
 
   // Print that number to the console
+  console.log(userNumber);
+
 
 };
 
@@ -267,20 +297,26 @@ Exer.control1 = function () {
 Exer.control2 = function ( bar ) {
 
   // Declare a variable named `foo`.
-
+  var foo;
   // Initialize `foo` with a string.
-
+  foo = "what you talking about foo!";
   // Log `foo` to the console.
-
+  console.log(foo);
   // Concatenate the parameter `bar` to be beginning and end of `foo`
   // Save the result in a new variable called `ding`.
+  var ding = bar + foo + bar;
+
 
   // Call `strReverse` and pass it `ding` (as an argument).
   // Send the result to the user in a confirm window.
   // Save the user's response in a new variable called `quux`.
+  var quux = confirm(strReverse(ding));
+
 
   // Return the opposite of `quux`.
+  return !quux;
 
+};
 };
 
 /*-----------------------    CONDITIONAL EXECUTION    ------------------------*/
@@ -293,7 +329,9 @@ Exer.condition1 = function ( isSerious ) {
 
   // If `isSerious` is false, output the message:
   //     On second thoughts, let's not go to Camelot. It is a silly place.
-
+  if (isSerious == false) {
+    console.log("On second thoughts, let's not go to Camelot. It is a silly place.");
+  }
 };
 
 // Conditional 2
@@ -302,7 +340,7 @@ Exer.condition2 = function ( temperature ) {
 
   // If temperature is greater than or equal to 70
   // Then output:
-  //     Hermit crab warning!
+  console.log("Hermit crab warning!"); 
 
   // Otherwise, output
   //     Catch of the day: influenza, $14/lb.
@@ -319,20 +357,35 @@ Exer.condition3 = function ( whatDay ) {
   // Declare and initialize `luckyNumber`
 
   // If the length of `whatDay` is 6 or less...
-
+  if (whatDay.length <= 6) {
+    luckyNumber = luckyNumber + "!";
+  }
   // If `whatDay` is "Mannersday"...
+  if (whatDay == "Mannersday") {
+    luckyNumber = luckyNumber + 4;
+  }
   // If `whatDay` is "Foosday"...
+  else if (whatDay == "Foosday") {
+    luckyNumber = luckyNumber + 2;
+  }
   // If `whatDay` is "Heyday"...
+  else if (whatDay == "Heyday") {
+    luckyNumber = luckyNumber + luckyNumber.charAt(0);
+  }
   // Otherwise...
-
+  else {
+    luckyNumber = Infinity;
+  }
   // Return `luckyNumber`
-
+  return luckyNumber;
 };
 
 // Conditional 4
 Exer.condition4 = function () {
 
   // Prompt the user
+  var userInput = prompt("Enter today's date, please.");
+
 
   // If the user's input is not a number...
   // Otherwise...
